@@ -3,4 +3,4 @@ lighttpd:
   volumes:
     - ./src:/var/www/localhost/htdocs
   ports:
-    - 80:80
+    - 8888:80
