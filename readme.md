@@ -13,6 +13,15 @@ When you have completed this test you will have demonstrated skills/knowledge in
 * css
 * js
 
+Requirements
+--------
+
+Make sure to complete the following:
+
+* Apply responsivness using media queries or freameworks for that 
+* Make the search functional
+* Make a custom js function for the slider 
+
 Instructions
 ------------
 
