@@ -50,5 +50,5 @@ Instructions
 To complete this test.
 
 1. Fork this repository
-2. Create a website based on the supplied PSD-file (it is not required to use the images from the PSD files)
+2. Create a website based on the supplied PSD-file (it is not required to use the images from the PSD-file)
 3. Create a pull request to this repository
