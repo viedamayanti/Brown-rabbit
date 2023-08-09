@@ -1,20 +1,769 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Brown rabbit test</title>
-        <link rel="stylesheet" href="css/main.css" type="text/css" >
-    </head>
-    <body>
-        <div class="wrapper">
-            <img src="assets/twentyfour-logo.svg" alt="Twentyfour!"/>
-            <h1 id="headline">
-                THE BROWN
-            </h1>
-            <a target="_blank" href="../readme.md">Project description</a>
-            <span> · </span>
-            <a target="_blank" href="https://xd.adobe.com/view/e3a1c6ff-52f7-41ed-9e70-bad4e6e9b930-b6f2/grid"> See design</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brown rabbit test</title>
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+          <div class="container-fluid m-auto p-3">
+            <div class="row">
+              <div class="col col-lg-4 col-md-4 col-sm-4 justify-content-start mt-2">
+                <div class="logo">
+                  <img
+                    src="./assets/logo-white.png"
+                    alt="logo-white"
+                    class="logo"
+                    width="300px"
+                  />
+                </div>
+              </div>
+              <div class="col-2 col-md-2 offset-2"></div>
+              <div class="col col-lg-2 col-md-2 justify-content-end">
+                <div class="search-header ">
+                  <div class="search-btn">
+                    <img
+                      src="./assets/icons/search.svg"
+                      alt="search-img"
+                      class="search-img"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="search"
+                      class="search-bar-input"
+                      name="search-bar"
+                      placeholder="Search"
+                    />
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col col-lg-2 col-md-2 col-sm-2 justify-content-end">
+                <!-- Social Media logo -->
+                <div class="some-logo-header justify-content-around">
+                  <img
+                    src="./assets/icons/linkedin-white.svg"
+                    alt="some-white"
+                    class="linkedin-some"
+                  />
+                  <img
+                    src="./assets/icons/twitter-white.svg"
+                    alt="some-white"
+                    class="twitter-some"
+                  />
+                  <img
+                    src="./assets/icons/instagram-white.svg"
+                    alt="some-white"
+                    class="instagram-some"
+                  />
+                  <img
+                    src="./assets/icons/facebook-white.svg"
+                    alt="some-white"
+                    class="fb-some"
+                  />
+                </div>
+                <div class="search-box">
+                  <p class="text-box">No search found</p>
+                </div>
+                <div class="flex-btn">
+                  <div class="search-image-flex">
+                    <div class="search-flex">
+                    <img
+                      src="./assets/icons/search.svg"
+                      alt="search-img-flex"
+                      class="search-img-flex"
+                    />
+                  </div>
+                  </div>
+                
+                  <div class="menu-btn">
+                    <div class="hamburger-menu">
+                      <img
+                        src="./assets/icons/icons8-menu.svg"
+                        alt="burger-menu"
+                        class="burger-menu"
+                      />
+                    </div>
+                    <div class="close-btn">
+                      <img
+                        src="./assets/icons/close.svg"
+                        alt="close"
+                        class="close-menu"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+               <!-- Navigation bar list -->
+            <div class="row">
+              <div class="col-2 offset-2"></div>
+              <div class="col col-8 d-flex justify-content-end  mt-3 ">
+                  <div class="navigation-bar">
+                    <a href="#">About us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Nordic roaster</a>
+                    <a href="#">Results</a>
+                    <a href="#">Links</a>
+                    <a href="#">Contact</a>
+                  </div>
+              </div>
+            </div>
+        
+          </div>
+    
+      </header>
+      <!-- Header ends here -->
+      <!-- Main page Carousel starts here -->
+      <section class="content-section ml-auto mr-auto position-relative">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <!-- Carousel image starts here -->
+            <div class="carousel-item active">
+              <div class="ratio ratio-21x9">
+                <img
+                  class="d-block w-100"
+                  src="./assets/images/slider/slider-1.jpg"
+                  alt="First slide"
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ratio ratio-21x9">
+                <img
+                  class="d-block w-100"
+                  src="./assets/images/slider/slider-2.jpg"
+                  alt="Second slide"
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ratio ratio-21x9">
+                <img
+                  class="d-block w-100"
+                  src="./assets/images/slider/slider-3.jpg"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <script src="js/scripts.js" type="text/javascript"></script>
-    </body>
+        <!-- Carousel text overlay -->
+        <div class="text-overlay">
+          <div id="carouselFade" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="text-overlay-item">
+                  <p class="fade-text">
+                    "To create an environment in which knowledge about coffee and
+                    its sphere can be obtained"
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-overlay-item">
+                  <p class="fade-text">
+                    "This is a great introduction do the coffee industry's best
+                    beans on the planet"
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-overlay-item">
+                  <p class="fade-text">
+                    "Coffee in code out, this is the way of eternal life and
+                    empowerment of the soul"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel control -->
+        <div class="carousel-control">
+          <button class="carousel-control-prev" type="button" data-bs-slide="prev">
+            <img
+              src="./assets/icons/arrow-left.svg"
+              alt="Previous"
+              class="carousel-control"
+            />
+             <span class="visually-hidden">Previous</span>
+          
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-slide="next">
+            <img
+              src="./assets/icons/arrow-right.svg"
+              alt="Next"
+              class="carousel-control"
+              />
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Main part ends here  -->
+
+      <!-- Post page starts section here -->
+      <section class="container container-page d-flex" >
+        <!-- Post page left side -->
+        <div class="col-lg-8 col-md-9 col-sm-12 container-left">
+          <div class="row d-flex data-container mb-6">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-3 ">
+             <div class="item-image">
+                <img
+                  src="./assets/images/posts/Post thumbnail-1.png"
+                  alt="post-1"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+              <div class="post-text">
+                <h1>Wonderful Copenhagen 2021</h1>
+                <h2>Published 12/07/2021</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum
+                </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Read more
+              </button>
+              
+              </div>
+            </div>
+        
+          </div>
+          <div class="row d-flex data-container mb-6 ">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+              <div class="item-image">
+                <img
+                  src="./assets/images/posts/Post thumbnail-2.png"
+                  alt="post-2"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+              <div class="post-text">
+                <h1>Wonderful Copenhagen 2022</h1>
+                <h2>Published 12/07/2021</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Read more
+              </button>
+              
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex data-container mb-6 "> 
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+              <div class="item-image">
+                <img
+                  src="./assets/images/posts/Post thumbnail-3.png"
+                  alt="post-3"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+              <div class="post-text">
+                <h1>Wonderful Copenhagen 2021</h1>
+                <h2>Published 12/07/2021</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Read more
+              </button>
+              
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex data-container mb-6 ">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-3 ">
+              <div class="item-image">
+                <img
+                  src="./assets/images/posts/Post thumbnail-4.png"
+                  alt="post-4"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+              <div class="post-text">
+                <h1>Wonderful Copenhagen 2021</h1>
+                <h2>Published 12/07/2021</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Read more
+              </button>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+<hr>
+     
+ <!-- Post page right side  -->
+        <div class="col-lg-4 col-md-3 col-sm-12 mt-6 container-right">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="container-text-1">
+                <h1>WBC Shop</h1>
+                <h3>Your shopping cart is empty</h3>
+                <button type="button" class="btn btn-outline-dark btn-lg">
+                  Visit the shop
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr >
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="container-text-2">
+                <h1>Next event</h1>
+                <h2 class="sub-title">World Barista Cup 2021</h2>
+                <h3>Copenhagen, Denmark</h3>
+                <h3>Dates : 25th - 27th August 2021</h3>
+                <h3>Theme : Sensory</h3>
+                <button type="button" class="btn btn-outline-dark btn-lg">
+                  Sign up now
+                </button>
+              </div>
+            </div>
+          </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="container-text-3">
+              <h1>Scoreboard</h1>
+              <h2 class="sub-title">List of winners from last year</h2>
+              <h3>2021 - ?</h3>
+              <h3>2020 - Denmark</h3>
+              <h3>2021 - Sweden</h3>
+              <h3>2021 - Turkey</h3>
+              <h3>2021 - Italy</h3>
+              <h3>2021 - germany</h3>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <hr>
+    
+      <!-- Post page ends here -->
+    
+
+      <!-- Sponsors starts here -->
+      <section class="sponsors-page ">
+        <div class="container  text-center ">
+          <div class="text-center text-md-start m-3">
+            <h1>World Barista Cup Sponsors</h1>
+          </div>
+          <div class="row justify-content-center  ">
+              <div class="sponsor-image text-center col-md-1 col-sm-1 col-xs-3 ">
+                <img src="./assets/images/sponsors/sponsor-1.png" alt="Sponsor-1" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-2.png" alt="Sponsor-2" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-3.png" alt="Sponsor-3" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-4.png" alt="Sponsor-4" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-5.png" alt="Sponsor-5" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-6.png" alt="Sponsor-6" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-7.png" alt="Sponsor-7" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-8.png" alt="Sponsor-8" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-9.png" alt="Sponsor-9" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-10.png" alt="Sponsor-10" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-11.png" alt="Sponsor-11" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-12.png" alt="Sponsor-12" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-13.png" alt="Sponsor-13" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-14.png" alt="Sponsor-14" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-15.png" alt="Sponsor-15" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-16.png" alt="Sponsor-16" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-17.png" alt="Sponsor-17" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-18.png" alt="Sponsor-18" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-19.png" alt="Sponsor-19" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-20.png" alt="Sponsor-20" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-40.png" alt="Sponsor-40" class="img-fluid">
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <img src="./assets/images/sponsors/sponsor-41.png" alt="Sponsor-41" class="img-fluid">
+              </div>
+
+           
+          </div>
+
+        </div>
+      </section>
+      <!-- Sponsors ends here  -->
+      
+      <!-- Footer starts here -->
+      <footer>
+        <div class="container text-center text-md-start mt-4 p-6">
+          <!-- Footer top -->
+          <div class="footer-top d-flex flex-wrap justify-content-center justify-content-lg-between justify-content-md-between flex-lg-row flex-md-row flex-sm-column">
+            <div class="footer-logo mt-3">
+              <img
+                src="./assets/logo-white.png"
+                alt="logo-white"
+                class="logo"
+              />
+            </div>
+            <div class="some-logo d-flex justify-content-center">
+              <img
+                src="./assets/icons/linkedin-white.svg"
+                alt="some-white"
+                class="linkedin-some"
+              />
+              <img
+                src="./assets/icons/twitter-white.svg"
+                alt="some-white"
+                class="twitter-some"
+              />
+              <img
+                src="./assets/icons/instagram-white.svg"
+                alt="some-white"
+                class="instagram-some"
+              />
+              <img
+                src="./assets/icons/facebook-white.svg"
+                alt="some-white"
+                class="fb-some "
+                
+              />
+            </div>
+          </div>
+      
+          <!-- Footer bottom -->
+          <div class="row justify-content-center py-3 text-lg-start text-md-start p-2 text-white mt-3 d-flex justify-content-start">
+            <div class="col-md-4 col-sm-12">
+              <div class="about-footer">
+                <h1>About World Barista Cup</h1>
+                <h2>The vision within The World Barista Cup</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                  modi cum ipsam ad, illo possimus laborum ut reiciendis obcaecati.
+                  Ducimus, quas. Corrupti, pariatur eaque? Reiciendis assumenda iusto
+                  sapiente inventore animi?
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+              <div class="footer-instagram-feed-title">
+                <h1>Instagram feed</h1>
+              </div>
+              <div class="footer-instagram-feed-image ">
+                <div class="footer-image d-flex justify-content-center">
+                  <div class="row row-image ">
+                    <div class="col-4 m-1 ">
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-1.png"
+                          alt="footer-1"
+                          class="footer-image-1"
+                        
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-2.png"
+                          alt="footer-2"
+                          class="footer-image-2"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-3.png"
+                          alt="footer-3"
+                          class="footer-image-3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-image">
+                    <div class="col-4 m-1">
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-4.png"
+                          alt="footer-1"
+                          class="footer-image-1"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-5.png"
+                          alt="footer-2"
+                          class="footer-image-2"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-6.png"
+                          alt="footer-3"
+                          class="footer-image-3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row row-image">
+                    <div class="col-4 m-1">
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-7.png"
+                          alt="footer-1"
+                          class="footer-image-1"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-8.png"
+                          alt="footer-2"
+                          class="footer-image-2"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/images/instagram-feed/instagram-image-9.png"
+                          alt="footer-3"
+                          class="footer-image-3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="contact-footer justify-content-center">
+                <h1>Contact</h1>
+                <h2>World Barista Cup</h2>
+                <p>
+                  Amagertorv 13 <br />
+                  1160 Copenhagen K <br />
+                  +45 33 12 04 28 <br />
+                  CVR: 11427693 <br />
+                  Email: info@worldbaristacup.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer ends here  -->
+        <!-- Modal starts here -->
+      <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">
+                <img
+                  class="d-block w-100 img-21x9"
+                  src="./assets/images/slider/slider.jpg"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <h1>Wonderful Copenhagen 2021</h1>
+              <h2>Published 12/07/2021</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                a dolorem, laborum aperiam deleniti possimus repellendus maxime
+                rem pariatur hic iure error. Eius harum quae expedita tempore
+                illum ullam voluptates maxime hic magni soluta assumenda fugiat
+                sit nam, iusto sapiente nemo unde reprehenderit, quidem error
+                voluptate beatae quod at eveniet? Aliquid omnis harum ullam
+                dolore, vel labore perferendis id esse rerum voluptate aliquam
+                error, atque earum necessitatibus officia mollitia architecto
+                minima?
+              </p>
+              <br />
+
+              <p>
+                Explicaboomnis quia natus ad. Sed eius, eveniet dolor officia
+                fugit mollitia dolorem? Labore temporibus aliquid nostrum,
+                excepturi totam dolore quod iusto reprehenderit debitis
+                veritatis alias tenetur exercitationem reiciendis odit quia non
+                vero expedita deserunt assumenda quam eaque. Obcaecati cumque
+                ipsa qui ad, dicta debitis iste commodi unde, animi laudantium,
+                eius voluptates quam nostrum dolorem molestiae dolores rerum
+                porro sunt ratione blanditiis vero minus libero eos voluptatum.
+                Numquam, dolorum rerum. Similique deleniti, earum temporibus
+                molestias reiciendis itaque natus! Natus praesentium quis
+                reprehenderit ab velit, doloremque esse molestiae deleniti
+                aperiam laboriosam, quasi quidem, eos corporis nostrum
+                temporibus magni enim atque! Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Velit a dolorem, laborum aperiam
+                deleniti possimus repellendus maxime rem pariatur hic iure
+                error.
+              </p>
+              <br />
+
+              <p>
+                Eius harum quae expedita tempore illum ullam voluptates maxime
+                hic magni soluta assumenda fugiat sit nam, iusto sapiente nemo
+                unde reprehenderit, quidem error voluptate beatae quod at
+                eveniet? Aliquid omnis harum ullam dolore, vel labore
+                perferendis id esse rerum voluptate aliquam error, atque earum
+                necessitatibus officia mollitia architecto minima? Explicabo
+                omnis quia natus ad. Sed eius, eveniet dolor officia fugit
+                mollitia dolorem? Labore temporibus aliquid nostrum, excepturi
+                totam dolore quod iusto reprehenderit debitis veritatis alias
+                tenetur exercitationem reiciendis odit quia non vero expedita
+                deserunt assumenda quam eaque. Obcaecati cumque ipsa qui ad,
+                dicta debitis iste commodi unde, animi laudantium, eius
+                voluptates quam nostrum dolorem molestiae dolores rerum porro
+                sunt ratione blanditiis vero minus libero eos voluptatum.
+              </p>
+              <br />
+
+              <p>
+                Numquam, dolorum rerum. Similique deleniti, earum temporibus
+                molestias reiciendis itaque natus! Natus praesentium quis
+                reprehenderit ab velit, doloremque esse molestiae deleniti
+                aperiam laboriosam, quasi quidem, eos corporis nostrum
+                temporibus magni enim atque! Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Velit a dolorem, laborum aperiam
+                deleniti possimus repellendus maxime rem pariatur hic iure
+                error. Eius harum quae expedita tempore illum ullam voluptates
+                maxime hic magni soluta assumenda fugiat sit nam, iusto sapiente
+                nemo unde reprehenderit, quidem error voluptate beatae quod at
+                eveniet? Aliquid omnis harum ullam dolore, vel labore
+                perferendis id esse rerum voluptate aliquam error, atque earum
+                necessitatibus officia mollitia architecto minima? Explicabo
+                omnis quia natus ad. Sed eius, eveniet dolor officia fugit
+                mollitia dolorem?
+              </p>
+              <br />
+
+              <p>
+                Labore temporibus aliquid nostrum, excepturi totam dolore quod
+                iusto reprehenderit debitis veritatis alias tenetur
+                exercitationem reiciendis odit quia non vero expedita deserunt
+                assumenda quam eaque. Obcaecati cumque ipsa qui ad, dicta
+                debitis iste commodi unde, animi laudantium, eius voluptates
+                quam nostrum dolorem molestiae dolores rerum porro sunt ratione
+                blanditiis vero minus libero eos voluptatum. Numquam, dolorum
+                rerum. Similique deleniti, earum temporibus molestias reiciendis
+                itaque natus! Natus praesentium quis reprehenderit ab velit,
+                doloremque esse molestiae deleniti aperiam laboriosam, quasi
+                quidem, eos corporis nostrum temporibus magni enim atque!
+              </p>
+            </div>
+          </div>
+          <div class="modal-close-btn">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal-dialog"  aria-label="Close"></button>
+            
+        </div>
+  
+      </div>
+      
+      <!-- Modal ends here -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/modal.js"></script>
+   
+  </body>
 </html>
